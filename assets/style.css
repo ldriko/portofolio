@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Medium.ttf') format('ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Bold.ttf') format('ttf');
+    font-weight: 700;
+}
+
+:root {
+    font-family: 'Inter', sans-serif;
+}
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus,
+a:focus {
+    outline-width: 2px;
+    outline-color: #000000;
+}
