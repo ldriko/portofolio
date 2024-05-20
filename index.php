@@ -41,7 +41,7 @@ if (isset($_GET['username'])) {
                         </div>
                     </div>
                 </div>
-                <div class="grid gap-4 p-4 border-b">
+                <div class="grid gap-4 p-4">
                     <?php require_once $root . '/templates/errors.php'; ?>
                     <div class="grid gap-4">
                         <div class="grid gap-1">
@@ -60,8 +60,8 @@ if (isset($_GET['username'])) {
                         <?php endif; ?>
                     </div>
                 </div>
-                <?php if ($user['id'] === $_SESSION['user']['id']) : ?>
-                    <div class="p-4">
+                <?php if (isset($_SESSION['user']) && $user['id'] === $_SESSION['user']['id']) : ?>
+                    <div class="p-4 border-t">
                         <a href="<?= $root ?>/profile.php" class="block px-3 py-2 bg-zinc-900 text-white rounded font-medium text-center">
                             Edit Profil
                         </a>

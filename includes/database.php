@@ -3,11 +3,15 @@
 class Database
 {
     protected $pdo;
+    protected $host = 'db';
+    protected $dbname = 'portofolio';
+    protected $user = 'root';
+    protected $password = 'password';
 
     public function __construct()
     {
         try {
-            $this->pdo = new PDO('mysql:host=localhost;dbname=portofolio', 'root', '');
+            $this->pdo = new PDO("mysql:host={$this->host};dbname={$this->dbname}", $this->user, $this->password);
         } catch (PDOException $e) {
             die($e->getMessage());
         }

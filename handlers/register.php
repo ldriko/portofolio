@@ -63,6 +63,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $tmp = $picture['tmp_name'];
             $ext = pathinfo($filename, PATHINFO_EXTENSION);
             $filename = md5($filename . time()) . ".$ext";
+
+            if (!file_exists($root . '/storage/users')) {
+                mkdir($root . '/storage/users', 0777, true);
+            }
+
             $picturePath = "/storage/users/$filename";
 
             move_uploaded_file($tmp, $root . $picturePath);
