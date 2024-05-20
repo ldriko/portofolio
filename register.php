@@ -46,19 +46,17 @@ require_once $root . '/templates/top.php';
             </div>
         </div>
         <div class=" grid gap-4 p-4">
-            <div class="grid gap-2">
-                <div class="grid gap-1">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="p-2 border rounded" value="<?= old('email') ?>" required>
-                </div>
-                <div class="grid gap-1">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" class="p-2 border rounded" required>
-                </div>
-                <div class="grid gap-1">
-                    <label for="password_confirmation">Konfirmasi Password</label>
-                    <input type="password" name="password_confirmation" id="password_confirmation" class="p-2 border rounded" required>
-                </div>
+            <div class="grid gap-1">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="p-2 border rounded" value="<?= old('email') ?>" required>
+            </div>
+            <div class="grid gap-1">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="p-2 border rounded" required>
+            </div>
+            <div class="grid gap-1">
+                <label for="password_confirmation">Konfirmasi Password</label>
+                <input type="password" name="password_confirmation" id="password_confirmation" class="p-2 border rounded" required>
             </div>
         </div>
         <div class="px-4 pb-4 flex flex-row-reverse items-center justify-between">
