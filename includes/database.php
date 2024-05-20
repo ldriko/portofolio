@@ -3,10 +3,10 @@
 class Database
 {
     protected $pdo;
-    protected $host = 'db';
+    protected $host = 'localhost';
     protected $dbname = 'portofolio';
     protected $user = 'root';
-    protected $password = 'password';
+    protected $password = '';
 
     public function __construct()
     {
