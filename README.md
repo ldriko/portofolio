@@ -1,5 +1,10 @@
 # Portofolio
 
+Deployed:
+https://portofolio.fly.dev
+
+Installasi:
+
 1. Clone repository:
 
     ```
